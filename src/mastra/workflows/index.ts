@@ -182,6 +182,7 @@ const weatherWorkflow = createWorkflow({
   outputSchema: z.object({
     activities: z.string(),
   }),
+  description: 'c',
 })
   .then(fetchWeather)
   .then(planActivities);
